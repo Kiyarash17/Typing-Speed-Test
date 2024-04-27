@@ -1,57 +1,61 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>JS Typing Speed Test</title>
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i,900,900i" type="text/css" media="all">
-  
+    <link
+      rel="stylesheet"
+      href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i,900,900i"
+      type="text/css"
+      media="all"
+    />
 
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-
-
-    <link rel="stylesheet" href="style.css">
-    
-</head>
-
-<body>
+  <body>
     <header class="masthead">
-        <h1>تست سنجش سرعت تایپ</h1>
+      <h1>تست سنجش سرعت تایپ</h1>
     </header>
     <main class="main">
-        <article class="intro">
-            <p dir="rtl">
-                 فرایند سنجش سرعت تایپ بدین گونه است 
-                 که با شروع تایپ کاربر , تایمر شروع به شمارش زمان میکند 
-               !!! و با تایپ هر حرف توسط کاربر مطابقت متن کاربر با متن نمایش داده شده چک میشود</p>
-        </article><!-- .intro -->
-        <section class="test-area">
-            <div class="pattern" >
-                متن الگو :
-            </div>
-            <div id="origin-text">
-                <p>The text to test.</p>
-            </div><!-- #origin-text -->
+      <article class="intro">
+        <p dir="rtl">
+          فرایند سنجش سرعت تایپ بدین گونه است که با شروع تایپ کاربر , تایمر شروع
+          به شمارش زمان میکند !!! و با تایپ هر حرف توسط کاربر مطابقت متن کاربر
+          با متن نمایش داده شده چک میشود
+        </p>
+      </article>
+      <!-- .intro -->
+      <section class="test-area">
+        <div class="pattern">متن الگو :</div>
+        <div id="origin-text">
+          <p>The text to test.</p>
+        </div>
+        <!-- #origin-text -->
 
-            <div class="test-wrapper">
-                <textarea id="test-area" name="textarea" rows="6" placeholder=" با تایپ اولین حرف تایمر شمارش را آغاز میکند"></textarea>
-            </div><!-- .test-wrapper -->
+        <div class="test-wrapper">
+          <textarea
+            id="test-area"
+            name="textarea"
+            rows="6"
+            placeholder=" با تایپ اولین حرف تایمر شمارش را آغاز میکند"
+          ></textarea>
+        </div>
+        <!-- .test-wrapper -->
 
-            <div class="meta">
-                <section id="clock">
-                    <div class="timer">00:00:00</div>
-                </section>
+        <div class="meta">
+          <section id="clock">
+            <div class="timer">00:00:00</div>
+          </section>
 
-                <button id="reset">از نو</button>
-            </div><!-- .meta -->
-        </section><!-- .test-area -->
+          <button id="reset">از نو</button>
+        </div>
+        <!-- .meta -->
+      </section>
+      <!-- .test-area -->
     </main>
 
-
-
     <script src="./app.js"></script>
-
-</body>
-
+  </body>
 </html>
